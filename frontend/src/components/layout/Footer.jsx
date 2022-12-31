@@ -4,7 +4,7 @@ function Footer() {
   return (
      <div className="footer">
           <div className="upper-footer">
-               <p id="tagline">Shop with monkey cart and get a free banana🍌</p>
+               <p id="tagline">Shop with monkey cart and get a free 🍌 with every order</p>
                
           </div>
           <div className="lower-footer">
