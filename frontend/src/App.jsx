@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import webFont from 'webfontloader'
 
 //components
@@ -24,7 +24,7 @@ function App() {
     <Router>
         <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Navigate to="/home"/>} />
         <Route path='/home' element={<Home />} />
         <Route path='/shop' element={<Shop />} />
       </Routes>

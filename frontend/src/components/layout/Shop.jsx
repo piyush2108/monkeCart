@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import Product from '../Product'
 
 const product = {
@@ -10,7 +11,7 @@ const product = {
 
 function Shop() {
   return (
-     <>
+     <>   
           <div className="shop-header">
                <p id="shop-heading">Featured products</p>
           </div>

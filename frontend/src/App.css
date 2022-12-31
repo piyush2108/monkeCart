@@ -31,8 +31,6 @@ body{
   background: var(--color-primary);
   font-family: var(--font-family--primary);
   color: var(--color-text-header);
-  display: flex;
-  flex-direction: column;
 }
 
 .container{
