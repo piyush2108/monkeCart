@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import webFont from 'webfontloader'
 
 //components
-import Header from './components/layout/Header.jsx'
-import Footer from './components/layout/Footer.jsx'
+import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
+import Home from './components/layout/Home'
+import Shop from './components/layout/Shop'
 
 import './App.css'
 
@@ -22,9 +24,9 @@ function App() {
     <Router>
         <Header />
       <Routes>
-        {/* <Route path='/shop' element={<Products />} />
-        <Rotue path='/user' elemet={<User />} />
-        <Route path='/cart' element={<Cart  />} /> */}
+        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/shop' element={<Shop />} />
       </Routes>
         <Footer />
     </Router>

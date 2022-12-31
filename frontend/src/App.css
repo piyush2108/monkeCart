@@ -1,5 +1,8 @@
 @import './css/Header.css';
 @import './css/Footer.css';
+@import './css/Home.css';
+@import './css/Shop.css';
+@import './css/Product.css';
 
 :root{
   --color-primary: #FED049;
@@ -14,19 +17,22 @@
   --font-size-primary: 1.2rem;
   --font-size-large: 2.2rem;
   --font-size-logo: 2rem;
-  --font-size-tagline: 3.5rem;
+  --font-size-tagline: 3rem;
 }
 
 *, *::before, *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
   background: var(--color-primary);
   font-family: var(--font-family--primary);
   color: var(--color-text-header);
+  display: flex;
+  flex-direction: column;
 }
 
 .container{

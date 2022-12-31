@@ -5,7 +5,6 @@ function Footer() {
      <div className="footer">
           <div className="upper-footer">
                <p id="tagline">Shop with monkey cart and get a free 🍌 with every order</p>
-               
           </div>
           <div className="lower-footer">
                     <div className="footer-contact">

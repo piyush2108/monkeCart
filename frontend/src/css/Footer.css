@@ -4,13 +4,9 @@ a{
 }
 
 .footer{
-     width: 100vw;
      padding: 2rem 4rem;
      background: var(--color-background);
      border-top: 3px solid var(--color-dark);
-     position: fixed;
-     bottom: 0;
-     
 }
 
 .upper-footer{

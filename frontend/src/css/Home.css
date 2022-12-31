@@ -1,0 +1,48 @@
+.banner{
+     padding: 2rem;
+     margin-bottom: 2rem;
+     background: var(--color-primary);
+     background: #F49D1A;
+}
+
+#banner-title{
+     margin-top: 2rem;
+     text-align: center;
+     padding: 0 3rem;
+     font-size: 4rem;
+     font-family: var(--font-family-header);
+     color: #FFFFFF;
+     text-shadow: 2px 2px 8px var(--color-dark);
+     transition: 400ms;
+}
+
+#banner-title:hover{
+     text-shadow: -5px 10px 12px var(--color-dark);
+}
+
+#banner-subtitle{
+     text-align: center;
+     margin-top: 1rem;
+     padding: 0 3rem;
+     font-size: 2.5rem;
+     font-weight: 400;
+     font-family: var(--font-family-header);
+     color: var(--color-text-header);
+}
+
+#banner-minor-text{
+     width: fit-content;
+     margin: auto;
+     animation: strike 400ms;
+     margin-top: 2rem;
+     text-align: center;
+     font-family: var(--font-family-secondary);
+     font-size: 1.3rem;
+     font-weight: 600;
+     color: var(--color-text-header);
+     transition: 400ms;
+}
+
+#banner-minor-text:hover{
+     color: #FFFFFF;
+}
