@@ -1,32 +1,34 @@
-import React from 'react'
-import { Helmet } from 'react-helmet-async'
+import { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { getProduct } from '../../actions/productActions'
 import Product from '../Product'
-
-const product = {
-     name: "Black Pen",
-     price: "400",
-     images: [{ url: "https://picsum.photos/200/300" }],
-     _id: "random id"
-}
+import Loader from '../Loader'
 
 function Shop() {
-  return (
-     <>   
-          <div className="shop-header">
-               <p id="shop-heading">Featured products</p>
-          </div>
-          <div className="products-container">
-               <Product product={product}/>
-               <Product product={product}/>
-               <Product product={product}/>
-               <Product product={product}/>
-               <Product product={product}/>
-               <Product product={product}/>
-               <Product product={product}/>
-               <Product product={product}/>
-          </div>
-     </>
-  )
+     const dispatch = useDispatch()
+     const { loading, error, products, productsCount }  = useSelector(state => state.products)
+
+     useEffect(()=>{
+          dispatch(getProduct())
+     }, [dispatch])
+
+     return (
+          <>
+               {loading ? <Loader /> : 
+               <>   
+                    <div className="shop-header">
+                         <p id="shop-heading">Featured products</p>
+                    </div>
+                    <div className="products-container">
+                         {products && products.map(product => 
+                              <Product product={product}/>
+                         )}
+                         
+                    </div>
+               </>  
+               }
+          </>
+     )
 }
 
 export default Shop

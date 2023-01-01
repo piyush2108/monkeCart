@@ -2,7 +2,7 @@
      padding: 1rem 3rem;
      display: flex;
      justify-content: center;
-     align-items: center ;
+     align-items: flex-end;
      flex-wrap: wrap;
 }
 
@@ -32,11 +32,13 @@
 }
 
 #product-name{
+     height: 1.2rem;
      text-align: center;
      margin-top: .2rem;
      font-family: var(--font-family-primary);
      font-size: 1rem;
      font-weight: 600;
+     overflow: hidden;
 }
 
 #product-rating{

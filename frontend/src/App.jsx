@@ -7,6 +7,7 @@ import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import Home from './components/layout/Home'
 import Shop from './components/layout/Shop'
+import Loader from './components/Loader'
 
 import './App.css'
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' element={<Navigate to="/home"/>} />
         <Route path='/home' element={<Home />} />
         <Route path='/shop' element={<Shop />} />
+        <Route path='/load' element={<Loader />} />
       </Routes>
         <Footer />
     </Router>

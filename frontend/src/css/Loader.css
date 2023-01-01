@@ -1,0 +1,33 @@
+@keyframes loading {
+     to{
+          transform: rotate(360deg);
+     }
+}
+
+.loader-container{
+     height: 80vh;
+     width: 100%;
+     padding: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+}
+
+#loader-icon{
+     width: 10%;
+     animation: loading 1000ms linear infinite;
+}
+
+#loader-text{
+     text-align: center;
+     font-family: var(--font-family-header);
+     font-size: 2.3rem;
+     transition: 400ms;
+}
+
+#loader-text:hover{
+     text-shadow: 2px 2px 4px var(--color-dark);
+     color: #FFFFFF;
+}

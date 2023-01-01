@@ -3,6 +3,7 @@
 @import './css/Home.css';
 @import './css/Shop.css';
 @import './css/Product.css';
+@import './css/Loader.css';
 
 :root{
   --color-primary: #FED049;
@@ -35,4 +36,10 @@ body{
 
 .container{
   padding: 0 4rem;
+}
+
+@media (max-width: 916px) {
+  .container{
+    padding: 0 2rem;
+  }
 }
