@@ -5,6 +5,7 @@ import Product from '../Product'
 import Loader from '../Loader'
 
 function Shop() {
+
      const dispatch = useDispatch()
      const { loading, error, products, productsCount }  = useSelector(state => state.products)
 
@@ -20,8 +21,8 @@ function Shop() {
                          <p id="shop-heading">Featured products</p>
                     </div>
                     <div className="products-container">
-                         {products && products.map(product => 
-                              <Product product={product}/>
+                         {products && products.map((product) => 
+                              <Product key={product._id} product={product}/>
                          )}
                          
                     </div>

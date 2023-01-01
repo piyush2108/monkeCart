@@ -1,0 +1,117 @@
+.product-details-container{
+     padding: 5% 15% 2%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.product-images{
+     padding: 1rem;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+     display: flex;
+     transition: ease-out 400ms;
+}
+
+.product-images:hover{
+     scale: 1.2;
+}
+
+.product-details{
+     padding: 1rem;
+     align-self: flex-start;
+}
+
+#detail-name{
+     font-family: var(--font-family-primary);
+     font-size: var(--font-size-logo);
+     font-weight: 600;
+}
+
+#detail-desc{
+     margin-top: 1rem;
+     font-family: var(--font-family-header);
+     font-size: var(--font-size-primary);
+}
+
+#detail-category{
+     margin-top: 1rem;
+     width: fit-content;
+     padding: .3rem .5rem;
+     background: var(--color-background);
+     font-size: var(--font-size-primary);
+     color: var(--color-dark);
+     border-radius: 10px;
+     font-weight: 600;
+}
+
+#detail-ratings{
+     font-family: var(--font-family-secondary);
+     font-size: .8rem;
+     font-weight: 600;
+}
+
+#detail-price{
+     margin-top: 1rem;
+     font-family: var(--font-family-primary );
+     font-size: var(--font-size-primary);
+     color: var(--color-dark);
+     font-weight: 600;
+}
+
+#detail-stock{
+     font-family: var(--font-family-secondary);
+     font-size: 1rem;
+     font-weight: 600;
+     color: var(--color-secondary);
+}
+
+.product-action-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.product-cart{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+#increment-btn, #decrement-btn{
+     height: 2.2rem;
+     width: 2.2rem;
+     margin: 1rem;
+     margin-bottom: 0;
+     font-size: 2rem;
+     background: var(--color-text-header);
+     color: #FFFFFF;
+     border-radius: 50%;
+}
+
+#cart-value{
+     margin-bottom: 1rem;
+     font-family: var(--font-family-primary);
+     font-size: 1.5rem;
+}
+
+#cart-add{
+     margin-bottom: 1rem;
+     padding: .3rem .5rem;
+     font-size: 1.5rem;
+     background: var(--color-background);
+}
+
+.btn{
+     font-family: var(--font-family-header);
+     outline: none;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 400ms;
+}
+
+.btn:hover{
+     box-shadow: #000000 0px 5px 25px 0px
+}

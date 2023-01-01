@@ -4,6 +4,7 @@
 @import './css/Shop.css';
 @import './css/Product.css';
 @import './css/Loader.css';
+@import './css/ProductDetails.css';
 
 :root{
   --color-primary: #FED049;

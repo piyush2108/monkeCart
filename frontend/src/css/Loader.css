@@ -17,7 +17,7 @@
 
 #loader-icon{
      width: 10%;
-     animation: loading 1000ms linear infinite;
+     animation: loading 1200ms linear infinite;
 }
 
 #loader-text{
